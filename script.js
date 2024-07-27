@@ -17,8 +17,8 @@ function templateHtml(p){
                 <button class="btnComprar" data-id="` + p.id + `">compra</button>
             </div>
         </div> `
-} 
-        
+}
+
 
 
 $(function() {
