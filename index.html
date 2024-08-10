@@ -7,7 +7,8 @@
 
     <!-- JQuery -->
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>       
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <!-- bootstrap -->
 
@@ -16,44 +17,46 @@
 
     <!-- css -->
 
-    <link rel="stylesheet" href="../carrito/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>carrito</title>
 </head>
 
 <body class="container">
 
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand d-none d-lg-block" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                    </div>
+    <header class="container-fluid d-flex">
+        <div class="logo mx-2">
+            <img src="../assets/img/jera.webp" width="50" height="auto" alt="">
+        </div>
+        <nav class="row w-100 px-5">
+            <div class="p-2 d-flex justify-content-center">
+                <div class="input-container d-flex col-8">
+                    <input class="navbar border-end col-10 col-md-11 p-2" type="text" placeholder="Buscar">
+                    <button class="btn-search w-100" type="submit">@</button>
                 </div>
-                <div class="carro">
-                    <a href="/carrito/carrito.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            width="1em" height="1em" fill="currentColor" font-size="20">
-                            <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor">
-                                <circle cx="6" cy="22" r="1" stroke="none"></circle>
-                                <circle cx="20" cy="22" r="1" stroke="none"></circle>
-                                <circle cx="6" cy="22" r="1" fill="none" stroke-miterlimit="10"></circle>
-                                <circle cx="20" cy="22" r="1" fill="none" stroke-miterlimit="10"></circle>
-                                <path fill="none" stroke-miterlimit="10" d="M4.8 7H22l-2 10H6L4 2H1"></path>
-                            </g>
-                        </svg></a>
 
-                </div>
+
             </div>
-
+            <ul class="menu ">
+                <li class="nav-item ms-3"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item ms-3"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item ms-3"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item ms-3"><a class="nav-link" href="#">Home</a></li>
+            </ul>
         </nav>
+        <div class="carro mx-3">
+            <a href="/carrito/carrito.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" font-size="20">
+                    <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor">
+                        <circle cx="6" cy="22" r="1" stroke="none"></circle>
+                        <circle cx="20" cy="22" r="1" stroke="none"></circle>
+                        <circle cx="6" cy="22" r="1" fill="none" stroke-miterlimit="10"></circle>
+                        <circle cx="20" cy="22" r="1" fill="none" stroke-miterlimit="10"></circle>
+                        <path fill="none" stroke-miterlimit="10" d="M4.8 7H22l-2 10H6L4 2H1"></path>
+                    </g>
+                </svg>
+            </a>
+
+        </div>
     </header>
 
 
@@ -69,7 +72,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <script src="../carrito/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>

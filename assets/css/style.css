@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* header */
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12px;
+}
+
+
+.input-container {
+    border: 2px solid #560466;
+    border-radius: 4px;
+    height: 30px;
+
+}
+
+.btn-search:focus{
+    outline: none;
+}
+
+.navbar:focus {
+    outline: none;
+    /* border-color: #560466;
+    box-shadow: 0 0 6px #560466;
+    transition: all .2s; */
+
+}
+
+/* .carro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.carro>a>svg {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
