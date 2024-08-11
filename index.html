@@ -16,35 +16,68 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- css -->
-
+    <link rel="icon" type="image/png" href="../assets/img/jera.webp">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>carrito</title>
 </head>
 
-<body class="container">
+<body class="container-fluid pt-2">
 
-    <header class="container-fluid d-flex">
-        <div class="logo mx-2">
-            <img src="../assets/img/jera.webp" width="50" height="auto" alt="">
+    <header class="d-flex justify-content-evenly px-2 pb-2">
+        <div class="logo mx-2 col-md-1 d-none d-md-flex d-flex align-items-center justify-content-center">
+            <a href="#" aria-label="logo de la pagina">
+                <img src="../assets/img/jera.webp" width="40" height="auto" alt="jera">
+            </a>
         </div>
-        <nav class="row w-100 px-5">
-            <div class="p-2 d-flex justify-content-center">
-                <div class="input-container d-flex col-8">
-                    <input class="navbar border-end col-10 col-md-11 p-2" type="text" placeholder="Buscar">
-                    <button class="btn-search w-100" type="submit">@</button>
-                </div>
 
+        <div class="d-block d-md-none mt-2">
+            <div>
+                <button id="btn-slide" aria-label="Boton de menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                        <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+                        </svg>
+                </button>
 
             </div>
-            <ul class="menu ">
-                <li class="nav-item ms-3"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item ms-3"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item ms-3"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item ms-3"><a class="nav-link" href="#">Home</a></li>
+        </div>
+
+        <div class="input-container mt-2 d-flex col-7 d-block d-md-none">
+            <input class="navbar border-end col-10 col-md-11 p-2" type="text" placeholder="Buscar">
+            <button class="btn-search w-100 d-flex
+            align-items-center justify-content-center" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                    viewBox="0 0 30 30">
+                    <path
+                        d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="row w-100 mt-2 d-none d-md-block">
+            <div class="p-2 d-flex justify-content-center">
+                <div class="input-container d-flex col-md-5">
+                    <input class="navbar border-end col-10 col-md-11 p-2" type="text" placeholder="Buscar">
+                    <button class="btn-search w-100 d-flex
+                    align-items-center justify-content-center" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                            viewBox="0 0 30 30">
+                            <path
+                                d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="menu justify-content-center m-0">
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
             </ul>
         </nav>
-        <div class="carro mx-3">
-            <a href="/carrito/carrito.html">
+        <div class="carro mx-3 mt-2 col-md-1">
+            <a href="../carrito.html" aria-label="carro">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" font-size="20">
                     <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor">
                         <circle cx="6" cy="22" r="1" stroke="none"></circle>
@@ -55,8 +88,25 @@
                     </g>
                 </svg>
             </a>
-
         </div>
+
+        <div class="slide" id="slide">
+            <ul class="slide-menu">
+                <li class="nav-item mt-3">
+                    <a class="nav-link text-light" href="#">Home</a>
+                </li>
+                <li class="nav-item mt-3">
+                    <a class="nav-link text-light" href="#">Home</a>
+                </li>
+                <li class="nav-item mt-3">
+                    <a class="nav-link text-light" href="#">Home</a>
+                </li>
+                <li class="nav-item mt-3">
+                    <a class="nav-link text-light" href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+
     </header>
 
 

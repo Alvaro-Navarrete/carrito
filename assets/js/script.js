@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
 
-
+        // identificar que boton fue presionado
 
         $(".btnComprar").on("click", function (event) {
 
@@ -48,6 +48,30 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(product);
 
         });
+
+        // boton del menu
+
+        $("#btn-slide").on("click", function (event) {
+
+
+            
+
+            if ($('#slide').css('opacity') === "0") {
+                $("#slide").css("opacity", "1");
+                $("#slide").css("left", "0");
+            }else{
+                $('#slide').css("opacity", "0")
+                $("#slide").css("left", "-100%");
+            }
+
+            // if ($('#slide').css('display') === "none" || $('#slide').css('display') === "") {
+            //     $('#slide').css('display', 'flex')
+            //     // $('#slide').addClass('visible')
+            // }else{
+            //     $('#slide').css('display', 'none')
+            //     // $('#slide').removeClass('visible')
+            // }
+        })
 
 
     })
