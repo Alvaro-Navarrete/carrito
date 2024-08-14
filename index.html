@@ -30,7 +30,7 @@
             </a>
         </div>
 
-        <div class="d-block d-md-none mt-2">
+        <div class="d-flex align-items-center d-md-none mx-2 mt-2">
             <div>
                 <button id="btn-slide" aria-label="Boton de menu">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
@@ -41,22 +41,9 @@
             </div>
         </div>
 
-        <div class="input-container mt-2 d-flex col-7 d-block d-md-none">
-            <input class="navbar border-end col-10 col-md-11 p-2" type="text" placeholder="Buscar">
-            <button class="btn-search w-100 d-flex
-            align-items-center justify-content-center" type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
-                    viewBox="0 0 30 30">
-                    <path
-                        d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
-                    </path>
-                </svg>
-            </button>
-        </div>
-
-        <nav class="row w-100 mt-2 d-none d-md-block">
-            <div class="p-2 d-flex justify-content-center">
-                <div class="input-container d-flex col-md-5">
+        <nav class="row mt-2 mx-2 col-8 col-md-5">
+            <div class="p-2 ">
+                <div class="input-container d-flex col-md-12">
                     <input class="navbar border-end col-10 col-md-11 p-2" type="text" placeholder="Buscar">
                     <button class="btn-search w-100 d-flex
                     align-items-center justify-content-center" type="submit">
@@ -69,15 +56,19 @@
                     </button>
                 </div>
             </div>
-            <ul class="menu justify-content-center m-0">
+            <ul class="menu justify-content-center m-0 d-none d-md-flex">
                 <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
             </ul>
         </nav>
-        <div class="carro mx-3 mt-2 col-md-1">
-            <a href="../carrito.html" aria-label="carro">
+        <div class="carro d-flex mx-2 mt-2 col-md-3 align-items-center">
+            <ul class="menu m-0 p-0 d-none d-md-flex">
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Crea tu cuenta</a></li>
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Ingresa</a></li>
+            </ul>
+            <a class="mx-3" href="../carrito.html" aria-label="carro">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" font-size="20">
                     <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor">
                         <circle cx="6" cy="22" r="1" stroke="none"></circle>

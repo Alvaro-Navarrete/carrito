@@ -51,10 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // boton del menu
 
-        $("#btn-slide").on("click", function (event) {
-
-
-            
+        $("#btn-slide").on("click", function (event) { 
 
             if ($('#slide').css('opacity') === "0") {
                 $("#slide").css("opacity", "1");
@@ -63,14 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 $('#slide').css("opacity", "0")
                 $("#slide").css("left", "-100%");
             }
-
-            // if ($('#slide').css('display') === "none" || $('#slide').css('display') === "") {
-            //     $('#slide').css('display', 'flex')
-            //     // $('#slide').addClass('visible')
-            // }else{
-            //     $('#slide').css('display', 'none')
-            //     // $('#slide').removeClass('visible')
-            // }
         })
 
 
