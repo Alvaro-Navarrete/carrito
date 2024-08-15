@@ -51,14 +51,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // boton del menu
 
-        $("#btn-slide").on("click", function (event) { 
+        $("#btn-slide").on("click", function (event) {
 
-            if ($('#slide').css('opacity') === "0") {
-                $("#slide").css("opacity", "1");
-                $("#slide").css("left", "0");
-            }else{
-                $('#slide').css("opacity", "0")
+            var currentLeft = parseInt($('#slide').css('left'), 10);
+
+            if (currentLeft === 0) {
                 $("#slide").css("left", "-100%");
+            } else {
+                $("#slide").css("left", "0");
             }
         })
 
