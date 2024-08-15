@@ -104,22 +104,32 @@
 
     <div>
         <section class="border border-4">
-            <article>
-                <img src="../assets/img/jera.webp" width="40px" height="auto" alt="">
-                <div>
-                    <a href="#">Nombre</a>
+            <article class="d-flex p-2">
+                <div class="me-4">
+                    <img decoding="async" src="../assets/img/jera.webp" width="50px" height="50px" alt="">
+                </div>
+                <div class="p-2">
+                    <div>
+                        <a class="article-name" href="#">Nombre</a>
+                    </div>
                     <button class="link">eliminar</button>
                 </div>
             </article>
-            <div>
-                <div class="count-container d-flex p-1">
-                    <button class="btn-count">
-                        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="rgba(0, 0, 0, 0.9)"><path d="M1.99902 8.6007H13.999V7.4007H1.99902V8.6007Z" fill="rgba(0, 0, 0, 0.9)"></path></svg>
-                    </button>
-                    <div class="count">1</div>
-                    <button class="btn-count">
-                        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="rgba(0, 0, 0, 0.9)"><path d="M7.39902 7.40067V2.00067H8.59902V7.40067H13.999V8.60067H8.59902V14.0007H7.39902V8.60067H1.99902V7.40067H7.39902Z" fill="rgba(0, 0, 0, 0.9)"></path></svg>
-                    </button>
+            <div class="p-2 d-flex">
+                <div class="ms-5 col-2">
+                    <div class="count-container d-flex p-1">
+                        <button id="minor-btn" class="btn-count">
+                            <svg class="minor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="rgba(0, 0, 0, 1)"><path d="M1.99902 8.6007H13.999V7.4007H1.99902V8.6007Z"></path></svg>
+                        </button>
+                        <div id="count" class="count">1</div>
+                        <button id="major-btn" class="btn-count">
+                            <svg class="major" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="rgba(0, 0, 0, 1)"><path d="M7.39902 7.40067V2.00067H8.59902V7.40067H13.999V8.60067H8.59902V14.0007H7.39902V8.60067H1.99902V7.40067H7.39902Z"></path></svg>
+                        </button>
+                    </div>
+                    <p class="fw-light"><span class="amount">6</span> disponibles</p>
+                </div>
+                <div class="text-end w-100">
+                    $ 999 999
                 </div>
             </div>
         </section>
@@ -131,6 +141,7 @@
         crossorigin="anonymous"></script>
 
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/carrito.js"></script>
 </body>
 
 </html>
