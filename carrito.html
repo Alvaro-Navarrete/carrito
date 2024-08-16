@@ -19,6 +19,7 @@
 
     <link rel="icon" type="image/png" href="../assets/img/jera.webp">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/carrito.css">
     <title>carrito</title>
 </head>
 
@@ -27,7 +28,7 @@
 
     <header class="container-fluid d-flex justify-content-evenly px-2 pb-2">
         <div class="logo mx-2 col-md-1 d-none d-md-flex d-flex align-items-center justify-content-center">
-            <a href="#" aria-label="logo de la pagina">
+            <a href="../index.html" aria-label="logo de la pagina">
                 <img src="../assets/img/jera.webp" width="40" height="auto" alt="jera">
             </a>
         </div>
@@ -36,8 +37,10 @@
             <div>
                 <button id="btn-slide" aria-label="Boton de menu">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                        <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
-                        </svg>
+                        <path
+                            d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                        </path>
+                    </svg>
                 </button>
 
             </div>
@@ -59,10 +62,10 @@
                 </div>
             </div>
             <ul class="menu justify-content-center m-0 d-none d-md-flex">
-                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item ms-3 text-light"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item ms-3 text-light"><a class="nav-link" href="../index.html">Home</a></li>
             </ul>
         </nav>
         <div class="carro d-flex mx-2 mt-2 col-md-3 align-items-center">
@@ -86,53 +89,87 @@
         <div class="slide" id="slide">
             <ul class="slide-menu">
                 <li class="nav-item mt-3">
-                    <a class="nav-link text-light" href="#">Home</a>
+                    <a class="nav-link text-light" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item mt-3">
-                    <a class="nav-link text-light" href="#">Home</a>
+                    <a class="nav-link text-light" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item mt-3">
-                    <a class="nav-link text-light" href="#">Home</a>
+                    <a class="nav-link text-light" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item mt-3">
-                    <a class="nav-link text-light" href="#">Home</a>
+                    <a class="nav-link text-light" href="../index.html">Home</a>
                 </li>
             </ul>
         </div>
 
     </header>
 
-    <div>
-        <section class="border border-4">
-            <article class="d-flex p-2">
-                <div class="me-4">
-                    <img decoding="async" src="../assets/img/jera.webp" width="50px" height="50px" alt="">
-                </div>
-                <div class="p-2">
-                    <div>
-                        <a class="text-decoration-none text-dark" href="#">Nombre</a>
+    <div class="container-fluid">
+        <div class="row grid gap-4 m-md-5">
+            <section class="col-md-7">
+                <article class="article grid gap-row-4 p-2 my-4 border border-4">
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <img decoding="async" src="../assets/img/jera.webp" width="50px" height="50px" alt="">
+                        </div>
+                        <div class="p-2">
+                            <div>
+                                <a class="text-decoration-none text-dark" href="#">Nombre</a>
+                            </div>
+                            <button class="link">eliminar</button>
+                        </div>
                     </div>
-                    <button class="link">eliminar</button>
-                </div>
-            </article>
-            <div class="p-2 d-flex">
-                <div class="ms-5 col-2">
-                    <div class="count-container d-flex p-1">
-                        <button id="minor-btn" class="btn-count">
-                            <svg class="minor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="rgba(0, 0, 0, 1)"><path d="M1.99902 8.6007H13.999V7.4007H1.99902V8.6007Z"></path></svg>
-                        </button>
-                        <div id="count" class="count">1</div>
-                        <button id="major-btn" class="btn-count">
-                            <svg class="major" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="rgba(0, 0, 0, 1)"><path d="M7.39902 7.40067V2.00067H8.59902V7.40067H13.999V8.60067H8.59902V14.0007H7.39902V8.60067H1.99902V7.40067H7.39902Z"></path></svg>
-                        </button>
+                    <div class="p-2 d-flex">
+                        <div class="ms-5 col-3">
+                            <div class="count-container d-flex p-1">
+                                <button id="minor-btn" class="btn-count">
+                                    <svg class="minor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="rgba(0, 0, 0, 1)">
+                                        <path d="M1.99902 8.6007H13.999V7.4007H1.99902V8.6007Z"></path>
+                                    </svg>
+                                </button>
+                                <div id="count" class="count">1</div>
+                                <button id="major-btn" class="btn-count">
+                                    <svg class="major" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="rgba(0, 0, 0, 1)">
+                                        <path
+                                            d="M7.39902 7.40067V2.00067H8.59902V7.40067H13.999V8.60067H8.59902V14.0007H7.39902V8.60067H1.99902V7.40067H7.39902Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="amount-text fw-light"><span class="amount">6</span> disponibles</p>
+                        </div>
+                        <div class="text-end w-100 p-2">
+                            $ 999 999
+                        </div>
                     </div>
-                    <p class="amount-text fw-light"><span class="amount">6</span> disponibles</p>
+                </article>
+                
+                
+            </section>
+
+            <section id="summary" class="col-md-4 py-4 border border-4">
+                <div class="px-2">
+                    <span>Resumen de compra</span>
                 </div>
-                <div class="text-end w-100">
-                    $ 999 999
+                <div>
+                    <div class="d-flex justify-content-between px-2">
+                        <span>Productos</span>
+                        <span>$ 999 999</span>
+                    </div>
+                    <div class="d-flex justify-content-between fs-5 fw-semibold px-2">
+                        <span>Total</span>
+                        <span>$ 999 999</span>
+                    </div>
+                    <button class="btn-section btn btn-primary w-100 mt-3">Continuar compra</button>
                 </div>
-            </div>
-        </section>
+                
+            </section>
+
+        </div>
+
     </div>
 
 
