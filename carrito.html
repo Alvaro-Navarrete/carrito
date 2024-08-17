@@ -26,7 +26,7 @@
 <body>
 
 
-    <header class="container-fluid d-flex justify-content-evenly px-2 pb-2">
+    <header class="container-fluid d-flex justify-content-evenly px-2 pb-2 m-0">
         <div class="logo mx-2 col-md-1 d-none d-md-flex d-flex align-items-center justify-content-center">
             <a href="../index.html" aria-label="logo de la pagina">
                 <img src="../assets/img/jera.webp" width="40" height="auto" alt="jera">
@@ -105,17 +105,17 @@
 
     </header>
 
-    <div class="container-fluid">
-        <div class="row m-md-5">
-            <section class="col-md-7">
-                <article class="article p-2 m-4 my-4 border border-4">
-                    <div class="d-flex">
-                        <div class="me-4">
+    <div class="container-fluid bg-body-secondary">
+        <div class="row mx-md-5 mb-md-5 pt-4">
+            <section class="counter-container col-md-7">
+                <article class="article p-2 m-4 my-4 border border-4 bg-light overflow-hidden">
+                    <div class="row">
+                        <div class="mx-3 col-1">
                             <img decoding="async" src="../assets/img/jera.webp" width="50px" height="50px" alt="">
                         </div>
-                        <div class="p-2">
-                            <div>
-                                <a class="text-decoration-none text-dark" href="#">Nombre del producto</a>
+                        <div class="p-2 ms-4 col-8">
+                            <div class="">
+                                <a class="text-name text-decoration-none text-dark" href="#">Nombre del productoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a>
                             </div>
                             <button class="link">eliminar</button>
                         </div>
@@ -123,14 +123,14 @@
                     <div class="p-2 d-flex">
                         <div class="ms-5 col-3">
                             <div class="count-container d-flex p-1">
-                                <button id="minor-btn" class="btn-count">
+                                <button id="minor-btn" class="minor-btn btn-count">
                                     <svg class="minor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
                                         fill="rgba(0, 0, 0, 1)">
                                         <path d="M1.99902 8.6007H13.999V7.4007H1.99902V8.6007Z"></path>
                                     </svg>
                                 </button>
                                 <div id="count" class="count">1</div>
-                                <button id="major-btn" class="btn-count">
+                                <button id="major-btn" class="major-btn btn-count">
                                     <svg class="major" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
                                         fill="rgba(0, 0, 0, 1)">
                                         <path
@@ -142,101 +142,26 @@
                             <p class="amount-text fw-light"><span class="amount">6</span> disponibles</p>
                         </div>
                         <div class="text-end w-100 p-2">
-                            $ 999 999
-                        </div>
-                    </div>
-                </article>
-                <article class="article p-2 m-4 my-4 border border-4">
-                    <div class="d-flex">
-                        <div class="me-4">
-                            <img decoding="async" src="../assets/img/jera.webp" width="50px" height="50px" alt="">
-                        </div>
-                        <div class="p-2">
-                            <div>
-                                <a class="text-decoration-none text-dark" href="#">Nombre del producto</a>
-                            </div>
-                            <button class="link">eliminar</button>
-                        </div>
-                    </div>
-                    <div class="p-2 d-flex">
-                        <div class="ms-5 col-3">
-                            <div class="count-container d-flex p-1">
-                                <button id="minor-btn" class="btn-count">
-                                    <svg class="minor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
-                                        fill="rgba(0, 0, 0, 1)">
-                                        <path d="M1.99902 8.6007H13.999V7.4007H1.99902V8.6007Z"></path>
-                                    </svg>
-                                </button>
-                                <div id="count" class="count">1</div>
-                                <button id="major-btn" class="btn-count">
-                                    <svg class="major" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
-                                        fill="rgba(0, 0, 0, 1)">
-                                        <path
-                                            d="M7.39902 7.40067V2.00067H8.59902V7.40067H13.999V8.60067H8.59902V14.0007H7.39902V8.60067H1.99902V7.40067H7.39902Z">
-                                        </path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <p class="amount-text fw-light"><span class="amount">6</span> disponibles</p>
-                        </div>
-                        <div class="text-end w-100 p-2">
-                            $ 999 999
-                        </div>
-                    </div>
-                </article>
-                <article class="article p-2 m-4 my-4 border border-4">
-                    <div class="d-flex">
-                        <div class="me-4">
-                            <img decoding="async" src="../assets/img/jera.webp" width="50px" height="50px" alt="">
-                        </div>
-                        <div class="p-2">
-                            <div>
-                                <a class="text-decoration-none text-dark" href="#">Nombre del producto</a>
-                            </div>
-                            <button class="link">eliminar</button>
-                        </div>
-                    </div>
-                    <div class="p-2 d-flex">
-                        <div class="ms-5 col-3">
-                            <div class="count-container d-flex p-1">
-                                <button id="minor-btn" class="btn-count">
-                                    <svg class="minor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
-                                        fill="rgba(0, 0, 0, 1)">
-                                        <path d="M1.99902 8.6007H13.999V7.4007H1.99902V8.6007Z"></path>
-                                    </svg>
-                                </button>
-                                <div id="count" class="count">1</div>
-                                <button id="major-btn" class="btn-count">
-                                    <svg class="major" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
-                                        fill="rgba(0, 0, 0, 1)">
-                                        <path
-                                            d="M7.39902 7.40067V2.00067H8.59902V7.40067H13.999V8.60067H8.59902V14.0007H7.39902V8.60067H1.99902V7.40067H7.39902Z">
-                                        </path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <p class="amount-text fw-light"><span class="amount">6</span> disponibles</p>
-                        </div>
-                        <div class="text-end w-100 p-2">
-                            $ 999 999
+                            $ 18750
                         </div>
                     </div>
                 </article>
                 
+                
             </section>
 
-            <section id="summary" class="col-md-4 p-4 border border-4">
+            <section id="summary" class="col-md-4 p-4 border border-4 bg-light">
                 <div class="px-2">
                     <span>Resumen de compra</span>
                 </div>
                 <div>
                     <div class="d-flex justify-content-between px-2">
                         <span>Productos</span>
-                        <span>$ 999 999</span>
+                        <span>$ 18750</span>
                     </div>
                     <div class="d-flex justify-content-between fs-5 fw-semibold px-2">
                         <span>Total</span>
-                        <span>$ 999 999</span>
+                        <span>$ 18750</span>
                     </div>
                     <button class="btn-section btn btn-primary w-100 mt-3">Continuar compra</button>
                 </div>
@@ -252,36 +177,36 @@
 
     <section id="recomend" class="row p-4 justify-content-center mt-2 m-0">
         
-        <div class="col-5 col-sm-6 col-md-3 col-lg-2 m-2">
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
             <div class="">  
                 <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
                 <div class="">
-                    <div class="mb-2 fs-6">Nombre</div>
-                    <div class="mb-2 fs-4 fw-semibold">$ 999 999 </div>
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
                     <div class="mb-2 fw-light"> Stock: 6 </div>
                 </div>
                 
             </div>
             <button class="btnComprar" data-id="` + p.id + `">compra</button>
         </div>
-        <div class="col-5 col-sm-6 col-md-3 col-lg-2 m-2">
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
             <div class="">  
                 <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
                 <div class="">
-                    <div class="mb-2 fs-6">Nombre</div>
-                    <div class="mb-2 fs-4 fw-semibold">$ 999 999 </div>
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
                     <div class="mb-2 fw-light"> Stock: 6 </div>
                 </div>
                 
             </div>
             <button class="btnComprar" data-id="` + p.id + `">compra</button>
         </div>
-        <div class="col-5 col-sm-6 col-md-3 col-lg-2 m-2">
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
             <div class="">  
                 <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
                 <div class="">
-                    <div class="mb-2 fs-6">Nombre</div>
-                    <div class="mb-2 fs-4 fw-semibold">$ 999 999 </div>
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
                     <div class="mb-2 fw-light"> Stock: 6 </div>
                 </div>
                 

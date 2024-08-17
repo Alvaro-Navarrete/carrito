@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let major = document.querySelector('.major');
     var amount = parseFloat(document.querySelector('.amount').innerText);
 
+    
+
     function updateMinorBtnState() {
         if (count <= 1) {
             minorBtn.disabled = true;

@@ -3,17 +3,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var listaProductos = [];
 
-    listaProductos.push({ id: 1, nombre: "producto 1", precio: 18750, stock: 20, imagen: "../assets/img/jera.webp" })
+    listaProductos.push({ id: 1, nombre: "francesco virgolini la maquina mas veloz de tote italie", precio: 18750, stock: 20, imagen: "../assets/img/jera.webp" })
     listaProductos.push({ id: 2, nombre: "producto 2", precio: 18750, stock: 20, imagen: "../assets/img/jera.webp" })
     listaProductos.push({ id: 3, nombre: "producto 3", precio: 18750, stock: 20, imagen: "../assets/img/jera.webp" })
 
     function templateHtml(p) {
-        return `<div class="col-5 col-sm-6 col-md-3 col-lg-2 m-2">
+        return `<div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
             <div class="">  
                 <img src=" `+ p.imagen + ` " class="card-img-top" alt="...">
                 <div class="">
-                    <div class="mb-2 fs-6">` + p.nombre + `</div>
-                    <div class="mb-2 fs-4 fw-semibold"> $ `+ p.precio + ` </div>
+                    <div class="text-name mb-2 fs-6">` + p.nombre + `</div>
+                    <div class="mb-2 fs-5 fw-semibold"> $ `+ p.precio + ` </div>
                     <div class="mb-2 fw-light"> Stock: `+ p.stock + ` </div>
                 </div>
                 

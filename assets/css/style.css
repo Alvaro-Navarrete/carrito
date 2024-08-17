@@ -73,3 +73,10 @@ header{
 }
 
 
+.text-name{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Ajusta según el espacio disponible */
+    display: block;
+}
