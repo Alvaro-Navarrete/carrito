@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
     listaProductos.push({ id: 3, nombre: "producto 3", precio: 18750, stock: 20, imagen: "../assets/img/jera.webp" })
 
     function templateHtml(p) {
-        return `<div class="col-8 col-sm-6 col-md-3 col-lg-2 m-2">
+        return `<div class="col-5 col-sm-6 col-md-3 col-lg-2 m-2">
             <div class="">  
                 <img src=" `+ p.imagen + ` " class="card-img-top" alt="...">
                 <div class="">
                     <div class="mb-2 fs-6">` + p.nombre + `</div>
                     <div class="mb-2 fs-4 fw-semibold"> $ `+ p.precio + ` </div>
-                    <div class="mb-2 fs-6 fw-light"> Stock: `+ p.stock + ` </div>
+                    <div class="mb-2 fw-light"> Stock: `+ p.stock + ` </div>
                 </div>
                 
             </div>

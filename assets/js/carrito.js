@@ -73,23 +73,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function middle() {
+    function small() {
         window.addEventListener('scroll', function () {
             var summary = document.getElementById('summary');
             var articles = document.querySelectorAll('.article');
+            const recomend = document.getElementById('recomend').getBoundingClientRect();
 
-            var lastArticle = articles[articles.length - 1];
-            var lastArticleRect = lastArticle.getBoundingClientRect()
+            // var lastArticle = articles[articles.length - 1];
+            // var lastArticleRect = lastArticle.getBoundingClientRect()
 
-            var lastArticleBottom = lastArticleRect.bottom + window.scrollY;
+            var recomendPosition = recomend.top + window.scrollY;
             var summaryHeight = summary.offsetHeight;
 
-            var stopPosition = lastArticleBottom + 50;
+            var stopPosition = recomendPosition - 200 ;
 
-            var windowBottom = window.scrollY + window.innerHeight;
+            var windowTop = window.scrollY + window.innerHeight;
             
 
-            if (windowBottom >= stopPosition + summaryHeight) {
+            if (windowTop >= stopPosition + summaryHeight) {
                 summary.style.position = 'absolute';
                 summary.style.top = stopPosition + 'px';
                 summary.style.bottom = 'auto';
@@ -101,17 +102,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function handleScreenChange(e) {
-        if (e.matches) {
-            middle();
+    function change(item) {
+        if (item.matches) {
+            small();
         } else {
             large();
         }
     }
 
-    handleScreenChange(mediaQuery);
+    change(mediaQuery);
 
-    mediaQuery.addEventListener('change', handleScreenChange);
+    mediaQuery.addEventListener('change', change);
 
     updateMinorBtnState()
     updateMajorBtnState()
