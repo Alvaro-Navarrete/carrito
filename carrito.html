@@ -107,8 +107,8 @@
 
     <div class="container-fluid bg-body-secondary">
         <div class="row mx-md-5 mb-md-5 pt-4">
-            <section class="counter-container col-md-7">
-                <article class="article p-2 m-4 my-4 border border-4 bg-light overflow-hidden">
+            <section id="counter-container" class="counter-container pb-5 col-md-7">
+                <!-- <article class="article p-1 m-4 border border-4 bg-light overflow-hidden">
                     <div class="row">
                         <div class="mx-3 col-1">
                             <img decoding="async" src="../assets/img/jera.webp" width="50px" height="50px" alt="">
@@ -120,17 +120,17 @@
                             <button class="link">eliminar</button>
                         </div>
                     </div>
-                    <div class="p-2 d-flex">
-                        <div class="ms-5 col-3">
+                    <div class="container-price p-2 d-flex">
+                        <div class="ms-5 col-4">
                             <div class="count-container d-flex p-1">
-                                <button id="minor-btn" class="minor-btn btn-count">
-                                    <svg class="minor" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
+                                <button id="minor-btn" class="minor-btn" disabled="true">
+                                    <svg class="minor disable" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
                                         fill="rgba(0, 0, 0, 1)">
                                         <path d="M1.99902 8.6007H13.999V7.4007H1.99902V8.6007Z"></path>
                                     </svg>
                                 </button>
-                                <div id="count" class="count">1</div>
-                                <button id="major-btn" class="major-btn btn-count">
+                                <input class="count" type="number" min="1" value="1" step="1">
+                                <button id="major-btn" class="major-btn">
                                     <svg class="major" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
                                         fill="rgba(0, 0, 0, 1)">
                                         <path
@@ -141,21 +141,30 @@
                             </div>
                             <p class="amount-text fw-light"><span class="amount">6</span> disponibles</p>
                         </div>
-                        <div class="text-end w-100 p-2">
-                            $ 18750
+                        <div class="text-end  w-100 ">
+                            <div class="unit-price fw-light">
+                                $<span class="price">18750</span>
+                            </div>
+                            <div class="">
+                                $<span class="price">18750</span>
+                            </div>
                         </div>
+                        
                     </div>
-                </article>
+                </article> -->
                 
-                
+
             </section>
 
-            <section id="summary" class="col-md-4 p-4 border border-4 bg-light">
-                <div class="px-2">
+            <div id="space" class="d-md-none"></div>
+
+
+            <section id="summary" class="col-md-4 col-12 bg-light border">
+                <div class="px-2 my-2 fs-5">
                     <span>Resumen de compra</span>
                 </div>
                 <div>
-                    <div class="d-flex justify-content-between px-2">
+                    <div class="d-flex justify-content-between px-2 my-1">
                         <span>Productos</span>
                         <span>$ 18750</span>
                     </div>
@@ -163,53 +172,171 @@
                         <span>Total</span>
                         <span>$ 18750</span>
                     </div>
-                    <button class="btn-section btn btn-primary w-100 mt-3">Continuar compra</button>
+                    <button class="btn-section btn btn-primary w-100 my-3">Continuar compra</button>
                 </div>
-                
+
             </section>
 
         </div>
 
-        <div class="space d-md-none">
-        </div>
 
     </div>
 
-    <section id="recomend" class="row p-4 justify-content-center mt-2 m-0">
-        
+    <section id="recommended" class="row p-4 justify-content-center mt-2 m-0">
+
         <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
-            <div class="">  
+            <div class="">
                 <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
                 <div class="">
                     <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
                     <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
                     <div class="mb-2 fw-light"> Stock: 6 </div>
                 </div>
-                
+
             </div>
             <button class="btnComprar" data-id="` + p.id + `">compra</button>
         </div>
         <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
-            <div class="">  
+            <div class="">
                 <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
                 <div class="">
                     <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
                     <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
                     <div class="mb-2 fw-light"> Stock: 6 </div>
                 </div>
-                
+
             </div>
             <button class="btnComprar" data-id="` + p.id + `">compra</button>
         </div>
         <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
-            <div class="">  
+            <div class="">
                 <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
                 <div class="">
                     <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
                     <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
                     <div class="mb-2 fw-light"> Stock: 6 </div>
                 </div>
-                
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
+            </div>
+            <button class="btnComprar" data-id="` + p.id + `">compra</button>
+        </div>
+        <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 m-2 p-0">
+            <div class="">
+                <img src="../assets/img/jera.webp" class="card-img-top" alt="...">
+                <div class="">
+                    <div class="text-name mb-2 fs-6 overflow-hidden text-nowrap">Nombre</div>
+                    <div class="mb-2 fs-5 fw-semibold">$ 18750 </div>
+                    <div class="mb-2 fw-light"> Stock: 6 </div>
+                </div>
+
             </div>
             <button class="btnComprar" data-id="` + p.id + `">compra</button>
         </div>

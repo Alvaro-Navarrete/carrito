@@ -6,8 +6,8 @@
 
 /* carrito */
 
-.count-container{
-    width: 70px;
+.count-container {
+    width: 90px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -15,18 +15,24 @@
     border: 1px solid #a6a6a6;
 }
 
-.count-container:hover{
+.count-container:hover {
     border: 1px solid #6b6b6b;
 }
 
-.count{
-    width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.count {
+    width: 30px;
+    text-align: center;
 }
 
-.btn-count{
+/* Ocultar los botones de incremento y decremento en navegadores webkit */
+.count[type=number]::-webkit-inner-spin-button,
+.count[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.minor-btn,
+.major-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,34 +43,38 @@
     transition: all .5s ease;
 }
 
-.disable{
+.disable {
     fill: #9e9d9d;
 }
 
-.btn-count:hover{
+.minor-btn:hover,
+.major-btn:hover  {
     background-color: #b1b1b144;
     transition: all .5s ease;
 }
 
-.amount-text{
+.amount-text,
+.unit-price {
     font-size: smaller;
 }
 
-.space{
-    height: 200px;
-}
+
+/* .space {
+    height: 150px;
+} */
 
 /* summary */
 
-#summary{
+#summary {
     position: fixed;
     top: 125px;
     left: 60%;
     max-height: 200px;
 }
 
-@media (max-width: 767px){
-    #summary{
+@media (max-width: 767px) {
+    #summary {
+        position: relative;
         bottom: 0;
         left: 0;
         right: 0;
