@@ -34,8 +34,10 @@
             <div>
                 <button id="btn-slide" aria-label="Boton de menu">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                        <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
-                        </svg>
+                        <path
+                            d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                        </path>
+                    </svg>
                 </button>
 
             </div>
@@ -44,9 +46,9 @@
         <nav class="row mt-2 mx-2 col-8 col-md-5">
             <div class="p-2 ">
                 <div class="input-container d-flex col-md-12">
-                    <input class="navbar border-end col-10 col-md-11 p-2" type="text" placeholder="Buscar">
+                    <input id="search" class="navbar border-end col-10 col-md-11 p-2" type="text" placeholder="Buscar">
                     <button class="btn-search w-100 d-flex
-                    align-items-center justify-content-center" type="submit">
+                    align-items-center justify-content-center" type="submit" aria-label="search">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
                             viewBox="0 0 30 30">
                             <path
@@ -54,6 +56,8 @@
                             </path>
                         </svg>
                     </button>
+                    <div id="listBox"
+                        class="listBox bg-light border border-1 border-top-0 border-bottom-0 border-info-subtle"></div>
                 </div>
             </div>
             <ul class="menu justify-content-center m-0 d-none d-md-flex">
@@ -102,7 +106,13 @@
 
 
     <main class="row p-4 justify-content-center m-0">
-
+        <div class="position-relative">
+            <button id="filter">filter</button>
+            <div>
+                <input id="minValue" type="text" placeholder="valor minimo">
+                <input id="maxValue" type="text" placeholder="valor maximo">
+            </div>
+        </div>
     </main>
 
 
@@ -110,9 +120,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    
     <script src="../assets/js/script.js"></script>
 </body>
 

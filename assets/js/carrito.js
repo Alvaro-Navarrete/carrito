@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var listaProductos = [];
 
     listaProductos.push({ id: 1, nombre: "francesco virgolini la maquina mas veloz de tote italie", precio: 18750, stock: 4, imagen: "../assets/img/jera.webp" })
-    listaProductos.push({ id: 2, nombre: "producto 2", precio: 18750, stock: 10, imagen: "../assets/img/jera.webp" })
-    listaProductos.push({ id: 3, nombre: "producto 3", precio: 18750, stock: 2, imagen: "../assets/img/jera.webp" })
+    listaProductos.push({ id: 2, nombre: "producto 2", precio: 15300, stock: 10, imagen: "../assets/img/jera.webp" })
+    listaProductos.push({ id: 3, nombre: "producto 3", precio: 25000, stock: 2, imagen: "../assets/img/jera.webp" })
 
     function templateHtml(p) {
         return `<article class="article p-1 m-4 border border-4 bg-light overflow-hidden">
@@ -23,14 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="container-price p-2 d-flex">
                         <div class="ms-5 col-4">
                             <div class="count-container d-flex p-1">
-                                <button id="minor-btn" class="minor-btn" disabled="true">
+                                <button aria-label="minor" id="minor-btn" class="minor-btn" disabled="true">
                                     <svg class="minor disable" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
                                         fill="rgba(0, 0, 0, 1)">
                                         <path d="M1.99902 8.6007H13.999V7.4007H1.99902V8.6007Z"></path>
                                     </svg>
                                 </button>
-                                <input class="count" type="number" min="1" value="1" step="1">
-                                <button id="major-btn" class="major-btn">
+                                <input class="count" type="number" min="1" value="1" step="1" aria-label="count" >
+                                <button aria-label="major" id="major-btn" class="major-btn">
                                     <svg class="major" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"
                                         fill="rgba(0, 0, 0, 1)">
                                         <path
@@ -199,7 +199,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     mediaQuery.addEventListener('change', change);
 
-    updateMinorBtnState()
-    updateMajorBtnState()
 
 })

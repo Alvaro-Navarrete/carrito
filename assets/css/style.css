@@ -19,19 +19,28 @@ header{
     font-size: 12px;
 }
 
+.listBox{
+    display: none;
+    position: absolute;
+    top: 29px;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    max-height: 200px;
+    z-index: 9999;
+}
+
+.listArticle:hover{
+    cursor: pointer;
+    background-color: #6b6b6b34;
+    transition: all .2s ease-in;
+}
 
 .input-container {
     border: 2px solid #3F9BBF;
-    border-radius: 8px;
+    position: relative;
+    /* border-radius: 8px; */
     height: 30px;
-}
-
-.navbar{
-    border-radius: 6px 0 0 6px;
-}
-
-.btn-search{
-    border-radius: 0 6px 6px 0;
 }
 
 .btn-search:focus{
