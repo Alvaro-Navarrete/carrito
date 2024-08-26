@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var listaProductos = [];
 
-    listaProductos.push({ id: 1, nombre: "francesco virgolini la maquina mas veloz de tote italie", precio: 18750, stock: 4, imagen: "../assets/img/jera.webp" })
-    listaProductos.push({ id: 2, nombre: "producto 2", precio: 15300, stock: 10, imagen: "../assets/img/jera.webp" })
-    listaProductos.push({ id: 3, nombre: "producto 3", precio: 25000, stock: 2, imagen: "../assets/img/jera.webp" })
+    listaProductos.push({ id: 1, nombre: "francesco virgolini la maquina mas veloz de tote italie", precio: 18750, stock: 4, imagen: "" })
+    listaProductos.push({ id: 2, nombre: "producto 2", precio: 15300, stock: 10, imagen: "" })
+    listaProductos.push({ id: 3, nombre: "producto 3", precio: 25000, stock: 2, imagen: "" })
 
     function templateHtml(p) {
         return `<article class="article p-1 m-4 border border-4 bg-light overflow-hidden">
                     <div class="row">
                         <div class="mx-3 col-1">
-                            <img decoding="async" src="`+ p.imagen +`" width="50px" height="50px" alt="">
+                            <img src="`+ p.imagen +`" width="50px" height="50px" alt="">
                         </div>
                         <div class="p-2 ms-4 col-8">
                             <div class="">
@@ -54,11 +54,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 </article> `
     }
 
-    const cocounterContainer = document.getElementById('counter-container')
+    const counterContainer = document.getElementById('counter-container')
 
     for (let i = 0; i < listaProductos.length; i++) {
         const producto = listaProductos[i];
-        cocounterContainer.innerHTML += templateHtml(producto);
+        counterContainer.innerHTML += templateHtml(producto);
     }
 
 
