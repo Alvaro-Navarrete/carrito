@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function small() {
-        window.addEventListener('scroll', debounce(function () {
+        function updateSummaryPosition() {
             var summary = document.getElementById('summary');
             const recommend = document.getElementById('recommended').getBoundingClientRect();
             const space = document.getElementById('space');
@@ -184,8 +184,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 summary.style.bottom = '0';
                 summary.style.top = '';
             }
-        }));
+        }
+
+        window.addEventListener('scroll', debounce(updateSummaryPosition))
+
+        window.addEventListener('resize', debounce(updateSummaryPosition))
+
+        updateSummaryPosition()
+
     }
+
 
     function change(item) {
         if (item.matches) {
