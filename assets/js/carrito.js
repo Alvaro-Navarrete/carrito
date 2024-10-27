@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var listaProductos = [];
 
-    listaProductos.push({ id: 1, nombre: "francesco virgolini la maquina mas veloz de tote italie", precio: 18750, stock: 4, imagen: "" })
-    listaProductos.push({ id: 2, nombre: "producto 2", precio: 15300, stock: 10, imagen: "" })
-    listaProductos.push({ id: 3, nombre: "producto 3", precio: 25000, stock: 2, imagen: "" })
+    listaProductos.push({ id: 1, nombre: "francesco virgolini la maquina mas veloz de tote italie", precio: 18750, stock: 4, imagen: "../assets/img/jera.webp" })
+    listaProductos.push({ id: 2, nombre: "producto 2", precio: 15300, stock: 10, imagen: "../assets/img/jera.webp" })
+    listaProductos.push({ id: 3, nombre: "producto 3", precio: 25000, stock: 2, imagen: "../assets/img/jera.webp" })
 
     function templateHtml(p) {
         return `<article class="article p-1 m-4 border border-4 bg-light overflow-hidden">
